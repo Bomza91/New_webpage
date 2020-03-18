@@ -6,98 +6,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My own Webpage</title>
   <style>
-    .container {
+   .container {
+     color: black;
+     background-color: blanchedalmond;
+     margin: 1em;
+     padding: 1em;
+     border: 1em solid blue;
+   }
+   .header{
+     display: flex;
+     justify-content: space-around;
+   }
+   .history{
+     display: flex;
+     font-size: small;
+     margin: 1em;
 
-      margin: 1em;
-      padding: 1em
-    }
+   }
+   .history ul, li, h3{
+      margin: 2px;
 
-    .header {
-      padding: 1em;
-      margin: 1em;
-
-    }
-
-    .main {
-      padding: 2em
-    
-    }
-
+   }
     .clearfix {
       overflow: auto;
       zoom: 1;
     }
-
-    .history {
-      flex: 1;
-      padding: 2em;
+    .language{
+      clear: both;
+      margin: 1em;
     }
 
-    .info {
-      display: flex;
-      padding: 2em;
+    table{
+      border: 1px solid black;
+      width: 70%;
+      border-collapse: collapse;
+
     }
-
-    .go-left {
-      float: left;
-      padding: 2em;
+   
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
     }
-
-
-    .go-right {
-      float: right;
-    }
-    
-
-    .place{
-      padding: 2em;
-      flex: 1
-    }
-
-    .home {
-        display: flex;
-      }
-
     @media(min-width: 800px) {
+      .container {
+     color: black;
+     background-color: blanchedalmond;
+     margin: 1em;
+     padding: 1em;
+     border: 1em solid blue;
+   }
 
-      .history {
-        display: flex;
-      }
-    
-    }  
-  </style>
+   .history{
+     display: inline-flex;
 
+    }
+  }
+
+</style>
 </head>
 
 <body>
 
-  <div class="container clearfix">
-    <div class="header clearfix">
-      <img src="tablemountain.jpg" style="float: right;">
-      <h1>Bomukazi Masentile</h1>
+  <div class="container">
+<div class="clearfix">
 
+    <div class="header">
+      <h1>Bomkazi Masentile</h1>
+      <img src="tablemountain.jpg" style="float:right;">
     </div>
 
-    <div class="main clearfix">
-      <h2>Which City</h2>
-      
-      <img  class="go-left"src="china.jpg">
 
-      <h3>China</h3>
 
-      <p>It is one of the largest countries in the world, China boasts incredibly diverse landscapes. Virtually whatever
+    <div class="city">
+      <h2>Which City?</h2>
+      <img src="china.jpg" height="200" width="200" style="float:left; padding: 2em;">
+      <h4>China</h4>
+      <p>It is one of the largest countries in the world, China boasts incredibly diverse landscapes. Virtually
+        whatever
         scenery you find most beautiful, you will find it in China. From the Northwest deserts to the Southeast
         seacoast, high mountain ranges to fertile plains, the frozen beauty of Harbin to the lush warm tropics of
         Xishuangbanna, China has it all. Hangzhou is famous for its stunning West Lake views.</p>
+         
      
     </div>
 
-    <div class="content">
-      <h2> A foreign language </h2>
-      <h3>Spanish</h3>
-      <p>because it is a beautiful language with a wide global influence on business and culture. </p>
 
-      <table border="1" style="width: 50%">
+
+
+   
+    <div class="language">
+      <h2>Foreign Language</h2>
+      <table>
         <tr>
           <th>English phrase</th>
           <th>Foreign phrase</th>
@@ -115,57 +117,57 @@
       </table>
     </div>
 
-    <div class="history clearfix">
-      <h2> Historical Places</h2>
-      <div class="home clearfix">
-        <div class="place">
-          
-            <h2> District Six Museum </h2>
-            <img  class="go-right"src="district6.jpg">
-             <p> 
-               <ul>
-              <li>District Six Museum Foundation was established in 1989. In 1994, the District Six Museum came into
-                being.
-              </li>
-              <li>The Museum is committed to telling the stories of forced removals, and assisting in the reconstitution
-                of
-                the community of District Six and Cape Town by drawing on a heritage of non-racialism, non-sexism,
-                anti-class discrimination and the encouragement of debate</li>
-              <li>The District Six Museum is a heritage project in itself. </li>
-            </ul>
-          </p>
 
+
+
+
+    <h2>Historical Places</h2>
+    <div class="history">
+        <div class="city text">
+          <h3>City Hall </h3>
+          <ul>
+            <li> The Slave Lodge is one of the oldest buildings in Cape Town.</li>
+            <li> The building was used as a slave lodge until 1811 when it was changed into government
+              offices
+              by
+              the new
+              British colonial authorities.</li>
+            <li> Slave Lodge housed the slaves who belonged to the Dutch East India Company (VOC)
+            </li>
+          </ul>
         </div>
-        <div class="place">
+        <img src="city.jpg" height="200" width="200">
 
-            <h2> City Hall</h2>
-            <img class="go-right"src="newcity.jpg">
-             <p>   
-               <ul>
-              <li>This is a large Edwardian building in the centre of Cape Town city.</li>
-              <li> It was built in 1905, on the Grand parade, west of the Castle of Good Hope. </li>
-              <li> The City Hall has become a central venue for creative and cultural events such as art exhibitions and
-                concerts.</li>
-            </ul>
-          </p>
+
+        <div class="castle text">
+          <h3>Castle Of Good </h3>
+          <ul>
+            <li>The first stone was laid on 2 January 1666 and it was completed by April 1679</li>
+            <li>The materials used to build the Castle were local and included rock cut from the granite outcrop on
+              Signal
+              Hill, and blue slate and shells – transported from Robben Island</li>
+            <li>In 1936 the Castle of Good Hope was declared a national monument</li>
+          </ul>
+          <img src="castle.jpg" height="200" width="200">
         </div>
 
-        <div class="place">
-          
-            <h2> Castle of Good Hope</h2>
-            <img class="go-right" src="castle.jpg">
-             <p>
-               <ul><li>The first stone was laid on 2 January 1666 and it was completed by April 1679</li>
-              <li>The materials used to build the Castle were local and included rock cut from the granite outcrop on
-                Signal
-                Hill, and blue slate and shells – transported from Robben Island</li>
-              <li>In 1936 the Castle of Good Hope was declared a national monument</li>
-            </ul>
-          </p>
-              </div>
-          </div>
+        <div class="district text">
+          <h3>District Six Museum</h3>
+          <ul>
+            <li>District Six Museum Foundation was established in 1989. In 1994, the District Six Museum came into
+              being.
+            </li>
+            <li>The Museum is committed to telling the stories of forced removals, and assisting in the reconstitution
+              of
+              the community of District Six and Cape Town by drawing on a heritage of non-racialism, non-sexism,
+              anti-class discrimination and the encouragement of debate</li>
+            <li>The District Six Museum is a heritage project in itself. </li>
+          </ul>
+          <img src="district6.jpg" height="200" width="200">
+        </div>
       </div>
     </div>
-</body>
+    </div>>
 
+</body>
 </html>
